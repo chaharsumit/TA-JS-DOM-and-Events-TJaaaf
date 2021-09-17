@@ -41,8 +41,7 @@
           <input
             id="color"
             type="color"
-            name="email"
-            placeholder="Enter your email"
+            name="color"
           />
         </div>
         <div class="form-control">
@@ -52,13 +51,11 @@
             type="range"
             max="10"
             step="1"
-            name="email"
-            placeholder="Enter your email"
+            name="range"
           />
         </div>
         <div class="form-control">
-          <label>Book genre you love?</label>
-
+          <label for="book">Book genre you love?</label>
           <div>
             <input
               type="radio"
@@ -91,6 +88,17 @@
         </div>
         <button type="submit">Submit</button>
       </form>
+    </div>
+
+    <div class="modal">
+      <p class="close">close</p>
+      <p class="name"></p>
+      <p class="email"></p>
+      <p class="preference"></p>
+      <p class="color"></p>
+      <p class="rating"></p>
+      <p class="book-genre"></p>
+      <p class="terms"></p>
     </div>
     <script src="./script.js"></script>
   </body>
