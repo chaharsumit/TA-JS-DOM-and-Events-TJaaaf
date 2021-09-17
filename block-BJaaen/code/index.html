@@ -4,8 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper and Scissors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <main>
+      <div class="container">
+        <div class="title">Rock Paper Scissors Lizard Spock</div>
+        <div class="game-player p1">
+          <p class="user">You - <span class="count-user">0</span></p>
+          <div class="icons">
+            <i class="far fa-hand-rock"></i>
+            <i class="far fa-hand-paper"></i>
+            <i class="far fa-hand-scissors"></i>
+            <i class="far fa-hand-lizard"></i>
+            <i class="far fa-hand-spock"></i>
+          </div>
+        </div>
+        <div class="game-player p2">
+          <p>Computer - <span class="count-comp">0</span></p>
+          <div class="icons">
+            <i class="far fa-hand-rock"></i>
+            <i class="far fa-hand-paper"></i>
+            <i class="far fa-hand-scissors"></i>
+            <i class="far fa-hand-lizard"></i>
+            <i class="far fa-hand-spock"></i>
+          </div>
+        </div>
+        <div class="reset"><i class="fas fa-sync-alt"></i></div>
+        <div class="result">You Won!</div>
+      </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
