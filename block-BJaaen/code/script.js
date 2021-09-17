@@ -1,12 +1,37 @@
-let container = document.querySelector('.container');
-let p1 = document.querySelector('.p1');
-let p2 = document.querySelector('.p2');
-let icons = document.querySelectorAll('.p1 i');
-let winner;
-let userCount = document.querySelector('.count-user');
-let compCount = document.querySelector('.count-comp');
-let computerCount = "";
-let result = document.querySelector('.result');
+let userRoot = document.querySelector('.user-icons');
+let computerRoot = document.querySelector('.computer-icons');
+let userSelected, computerSelected;
+
+
+let dataSet = [
+  {
+    name : "rock",
+    beats : ["scissors","lizard"]
+  }
+  {
+    name : "paper",
+    beats : ["rock","spock"]
+  }
+  {
+    name : "scissors",
+    beats : ["paper","lizard"]
+  }
+  {
+    name : "lizard",
+    beats : ["spock","paper"]
+  }
+  {
+    name : "spock",
+    beats : ["scissors","rock"]
+  }
+  
+]
+
+dataSet.forEach((icon) => {
+
+})
+
+
 
 let arr = [
   "rock",
@@ -17,8 +42,7 @@ let arr = [
 ];
 
 function p2Handler(){
-  let random = Math.floor(Math.random() * 4);
-  icons[random].color = "red";
+  return Math.floor(Math.random() * 4);
 }
 
 p2Handler();
