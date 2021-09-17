@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Form Validation 👇</title>
-  </head>
-  <body>
-   
-    <script src="./script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section>
+      <div class="container flex">
+        <div class="tagline-container col-1-1">
+          <h1>Learn to code by watching others</h1>
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="form-container col-1-1">
+          <header class="costing-detail">
+            <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+          </header>
+          <form class="form">
+              <input type="text" name="username" class="form-control" placeholder="User Name">
+              <small></small>
+              <input type="text" name="name" class="form-control" placeholder="Name">
+              <small></small>
+              <input type="email" name="email" class="form-control" placeholder="Email Address">
+              <small></small>
+              <input type="text" name="number" class="form-control" placeholder="Phone Number">
+              <small></small>
+              <input type="password" name="password" class="form-control" placeholder="Password">
+              <small></small>
+              <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password">
+              <small></small>
+              <input type="submit" name="submit" class="submit-btn form-control">
+              <p class="terms">By clicking the button, you are agreeing to our <span class="danger">terms and services</span></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
 </html>
