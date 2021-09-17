@@ -1,0 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+/* Custom CSS */
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+  font-size: 16px;
+  background-color: rgb(247, 120, 119);
+  background: rgb(247, 120, 119) url(../media/bg-intro-desktop.png) center center;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  height: 100vh;
+  background: transparent;
+}
+
+.col-1-1{
+  flex: 0 1 45%;
+}
+
+.tagline-container h1{
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.tagline-container p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #FDE4E3;
+}
+
+.costing-detail{
+  width: 100%;
+  padding: 24px 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 5px rgba(66, 39, 40, 0.5);
+  text-align: center;
+  background-color: #5D54A3;
+  font-size: 18px;
+  color: #FDE4E3;
+}
+
+.costing-detail strong{
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.form{
+  background-color: #ffffff;
+  padding: 42px 42px;
+  margin-top: 32px;
+  border-radius: 10px;
+}
+
+.form-control{
+  padding: 24px 48px;
+  display: block;
+  width: 100%;
+  border: 1px solid #EDEDED;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.form-control:focus{
+  border: 2px solid rgb(160, 158, 165);
+}
+
+.submit-btn{
+  background-color: #52CD8B;
+  color: #EDEDED;
+  text-transform: capitalize;
+  font-size: 18px;
+  border-bottom: 2px solid #49B97E;
+  text-transform: uppercase;
+}
+
+.danger{
+  color: rgb(235, 100, 91);
+  text-transform: capitalize;
+}
+
+.terms{
+  font-weight: 700;
+  color: #D1CFDA;
+  text-align: center;
+  font-size: 12px;
+}
+small{
+  color: black;
+}
