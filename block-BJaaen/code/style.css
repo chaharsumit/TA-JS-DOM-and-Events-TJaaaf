@@ -110,8 +110,8 @@ i{
   text-align: center;
 }
 
-.active{
-  color: #EC3F35;
+#active{
+  color: rgb(8, 7, 7);
 }
 
 
