@@ -1,4 +1,4 @@
-  const cardsArray = [
+ const cardsArray = [
     {
       name: 'shell',
       img: 'blueshell.png',
@@ -31,22 +31,6 @@
       name: 'mushroom',
       img: 'mushroom.png',
     },
-    {
-      name: 'thwomp',
-      img: 'thwomp.png',
-    },
-    {
-      name: 'bulletbill',
-      img: 'bulletbill.png',
-    },
-    {
-      name: 'coin',
-      img: 'coin.png',
-    },
-    {
-      name: 'goomba',
-      img: 'goomba.png',
-    },
   ]
   const gameGrid = cardsArray
     .concat(cardsArray)
@@ -58,6 +42,7 @@
   let previousTarget = null;
   let delay = 1200;
   let moves = 0;
+  let matchCount = 0;
 
   const game = document.getElementById('game');
   const grid = document.createElement('section');
@@ -104,7 +89,6 @@
 
   grid.addEventListener('click', event => {
     const clicked = event.target;
-    moves++;
     if (
       clicked.nodeName === 'SECTION' ||
       clicked === previousTarget ||
@@ -134,5 +118,4 @@
       }
       previousTarget = clicked;
     }
-
 });
