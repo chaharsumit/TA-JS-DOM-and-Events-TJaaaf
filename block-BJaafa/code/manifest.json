@@ -1,0 +1,9 @@
+{
+  "name": "Rock paper scissors App",
+  "description": "Extended rock paper scissors game include lizard and spock",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "chrome_url_overrides":{
+    "newtab": "index.html"
+  }
+}
