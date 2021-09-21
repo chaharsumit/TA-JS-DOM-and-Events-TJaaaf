@@ -52,9 +52,13 @@ function main(){
   function winner(){
     if(userChoice.beats.join('').includes(computerChoice.name)){
       result.innerText = "user wins!";
+      result.classList.remove("danger");
+      result.classList.add("primary");
       ++userCount;
     }else{
       result.innerText = "computer wins!";
+      result.classList.remove("primary");
+      result.classList.add("danger");
       ++compCount;
     }
     userSelect.innerText = `--- ${userChoice.name}`;
